@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function okno_zamknij_Radulski()
+            {
+                window.close()
+            }
+        </script>
+    </head>
+    <body>
+        HTML:<br>
+        <textarea rows="38" cols="125" style="overflow:hidden" readonly>
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            function okno_zamknij_Bieganski()
+            {
+                window.close()
+            }
+        </script>
+    </head>
+    <body>
+        <b>
+        <p style="color: green;">MENU</p>
+        <br>
+        <p style="color: red;">1-czerwony</p>
+        <p style="color: blue;">2-niebieski</p>
+        </b>
+        <input type="button" name="nazwisko_ucznia" value="Oblicz" onclick="fun_BIE()" />
+        <script>
+            function fun_BIE() {
+                var x_BIE = prompt("Podaj kolor", "");
+                if(x_BIE == 1 || x_BIE.toLowerCase() == "czerwony") {
+                    document.write('<h1 style="color: red;">wczytałeś kolor czerwony</h1><br />');
+                    document.write("<input type='button' value='zamknij okno' onclick='okno_zamknij_Bieganski()'/>")
+                }
+                else if(x_BIE == 2 || x_BIE.toLowerCase() == "niebieski") {
+                    document.write('<h6 style="color: blue;">wczytałeś kolor niebieski</h6><br />');
+                    document.write("<input type='button' value='zamknij okno' onclick='okno_zamknij_Bieganski()'/>")
+                }
+            }
+        </script>
+        <br><br>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_Bieganski()"/>
+    </body>
+</html>
+        </textarea>
+        <br><br>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_Bieganski()"/>
+    </body>
+</html>

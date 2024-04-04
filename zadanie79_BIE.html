@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function wprzod()
+            {
+                window.history.forward
+            }
+
+            function wtyl()
+            {
+                window.history.back
+            }
+
+            function trzytyl()
+            {
+                window.history.go(-3)
+            }
+
+            function odswierz()
+            {
+                window.history.go(0)
+            }
+
+            function okno_zamknij_Bieganski()
+            {
+            window.close()
+            }
+        </script>
+    </head>
+    <body>
+        <script>
+            document.write("Ile stron wcześniej: ");
+            document.write(window.history.length + "<br>");
+        </script>
+        <input type="button" name="przycisk1" value="W przód" onclick="wprzod(' ')"><br>
+        <input type="button" name="przycisk2" value="W tył" onclick="wtyl(' ')"><br>
+        <input type="button" name="przycisk3" value="Trzy strony do tyłu" onclick="trzytyl(' ')"><br>
+        <input type="button" name="przycisk4" value="Odświerz" onclick="odswierz(' ')">
+        <br><br>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_Bieganski()"/>
+    </body>
+</html>

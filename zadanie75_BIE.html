@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+        <title>Moja strona WWW</title>
+        <script>
+            function okno_zamknij_Bieganski()
+            {
+            window.close()
+            }
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            document.write("Podstawowe informacje o dokumencie:<br/>");
+            document.write("Tryb kompatybilności: ");
+            document.write(document.compatMode + "<br>");
+            document.write("URL: " + document.URL + "<br>");
+            document.write("Liczba apletów: ");
+            document.write(document.applets.length + "<br>");
+            document.write("Liczba obrazów: ");
+            document.write(document.images.length + "<br>");
+            document.write("Liczba formularzy: ");
+            document.write(document.forms.length + "<br>");
+            document.write("Tytuł: " + document.title + "<br>");
+            document.write("Data ostatniej modyfikacji: ");
+            document.write(document.lastModified + "<br>");
+            document.write("Ciąg określający kodowanie znaków w dokumencie: ");
+            document.write(document.characterSet + "<br>");
+            document.write("URL dokumentu, z którego nastąpiło odwołanie do bieżącego dokumentu: ");
+            document.write(document.referrer + "<br>");
+        </script>
+        <br>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_Bieganski()"/>
+    </body>
+</html>
